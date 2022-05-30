@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Sent</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body onload="myfunc()">
+    <div class="loginbox">
+        <h1>Forgot Password</h1>
+        <p>We have sent you a link to reset your password if your email is registered with us.</p>
+        <a href="http://127.0.0.1:5500/login/login.html">Back to login</a>
+    </div>
+    <div id="loading">
+    </div>
+    <script>
+        var preloader = document.getElementById('loading');
+        function myfunc(){
+            preloader.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

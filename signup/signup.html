@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="myfunc()">
+    <div class="signupbox">
+        <img src="avatar.png" class="avatar">
+        <h1>Sign Up</h1>
+        <form action="http://127.0.0.1:5500/main/main.html">
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Email</p>
+            <input type="email" name="" placeholder="Enter Email">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password">
+            <p>Re-Enter Password</p>
+            <input type="password" name="" placeholder="Re-Enter Password">
+            <input type="submit" name="" value="Sign Up"><br>
+            <a href="http://127.0.0.1:5500/login/login.html">Already have an account?</a>
+        </form>
+    </div>
+    <div id="loading">
+    </div>
+    <script>
+        var preloader = document.getElementById('loading');
+        function myfunc(){
+            preloader.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
