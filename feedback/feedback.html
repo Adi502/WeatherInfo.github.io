@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body onload="myfunc()">
+    <div class="loginbox">
+        <h1>Feedback</h1>
+        <p>Your feedbacks are valuable to us.</p>
+        <form action="http://127.0.0.1:5500/feedback/feedbackrec.html">
+            <p>Rate our website from 1-5 stars</p><br><br>
+            <p>Give your feedback below</p>
+            <input type="text" name="" placeholder="Enter your feedback">
+            <input type="submit" name="" value="Submit"><br>
+            <a href="http://127.0.0.1:5500/main/main.html">Back to home</a>
+            </form> 
+    </div>
+    <div class="rating">
+        
+        <input type="radio" name="star" id="star1"><label for="star1"></label>
+        <input type="radio" name="star" id="star2"><label for="star2"></label>
+        <input type="radio" name="star" id="star3"><label for="star3"></label>
+        <input type="radio" name="star" id="star4"><label for="star4"></label>
+        <input type="radio" name="star" id="star5"><label for="star5"></label>
+    </div>
+    <div id="loading">
+    </div>
+    <script>
+        var preloader = document.getElementById('loading');
+        function myfunc(){
+            preloader.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

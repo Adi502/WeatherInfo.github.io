@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for your feedback</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body onload="myfunc()">
+    <div class="loginbox">
+        <h1>Feedback</h1>
+        <p>Thank you for your feedback.We will surely consider it.</p>
+        <a href="http://127.0.0.1:5500/main/main.html">Back to home</a><br>
+        <a href="http://127.0.0.1:5500/login/login.html">Logout</a>
+    </div>
+    <div id="loading">
+    </div>
+    <script>
+        var preloader = document.getElementById('loading');
+        function myfunc(){
+            preloader.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
