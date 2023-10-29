@@ -13,11 +13,10 @@
         <h1>Login</h1>
         <form action="http://127.0.0.1:5500/main/main.html">
             <p>Username</p>
-            <input type="text" name="" placeholder="Enter Username">
+            <input type="text" id="email" placeholder="Enter Username">
             <p>Password</p>
-            <input type="password" name="" placeholder="Enter Password" id="pass">
-
-            <input type="submit" name="" value="Login"><br>
+            <input type="password" id="password" placeholder="Enter Password" id="pass">
+            <input type="button" value="Login" onclick="submitForm()"><br>
             <a href="http://127.0.0.1:5500/forgotpass/fpass.html">Forgot Password?</a><br>
             <a href="http://127.0.0.1:5500/signup/signup.html">Create a new account</a>
         </form>
@@ -31,5 +30,6 @@
             preloader.style.display = 'none';
         }
     </script>
+    <script src = "./login.js"></script>
 </body>
 </html>
